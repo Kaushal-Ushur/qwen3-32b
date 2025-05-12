@@ -12,7 +12,7 @@ if hf_token:
 
 class InferlessPythonModel:
     def initialize(self):
-        model_name = "Qwen/Qwen3-32B"
+        model_name = "Qwen/Qwen3-14B"
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.llm = LLM(model=model_name, enforce_eager=True)
 
