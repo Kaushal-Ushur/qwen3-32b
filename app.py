@@ -18,7 +18,7 @@ class InferlessPythonModel:
 
     def infer(self, inputs):
         prompt = inputs["prompt"]
-        temperature = inputs.get("temperature", 0.6)
+        # temperature = inputs.get("temperature", 0.6)
         top_p = inputs.get("top_p", 0.95)
         top_k = int(inputs.get("top_k", 20))
         repetition_penalty = float(inputs.get("repetition_penalty", 1.18))
@@ -33,7 +33,7 @@ class InferlessPythonModel:
         )
 
         sampling_params = SamplingParams(
-            temperature=temperature,
+            # temperature=temperature,
             top_p=top_p,
             top_k=top_k,
             repetition_penalty=repetition_penalty,

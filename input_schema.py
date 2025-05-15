@@ -5,12 +5,6 @@ INPUT_SCHEMA = {
         'shape': [1],
         'example': ["What is deep learning?"]
     },
-    "temperature": {
-        'datatype': 'FP32',
-        'required': False,
-        'shape': [1],
-        'example': [0.7]
-    },
     "top_p": {
         'datatype': 'FP32',
         'required': False,
